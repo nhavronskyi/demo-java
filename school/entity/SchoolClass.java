@@ -38,4 +38,12 @@ public class SchoolClass {
     public Student getStudentById(int id) {
         return null;
     }
+
+    public void addStudent(Student student) {
+        students.add(student);
+    }
+
+    public void removeStudent(int studentId) {
+        students.remove(studentId);
+    }
 }

@@ -6,10 +6,6 @@ public interface SchoolClassService {
 
     SchoolClass getSchoolClass();
 
-    void addStudentToClass();
-
-    void deleteStudentFromClass();
-
     double getClassAverageGrade();
 
     boolean checkIfAllStudentsAttendToTheSameClasses();

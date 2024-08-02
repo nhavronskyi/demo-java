@@ -8,6 +8,8 @@ import java.util.List;
 public interface SchoolService {
     List<SchoolClass> getAllClasses();
 
+    SchoolClass getClassById(int id);
+
     void deleteClass(int id);
 
     void saveClass(SchoolClass schoolClass);

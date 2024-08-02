@@ -16,7 +16,12 @@ public class SchoolServiceImpl implements SchoolService {
 
     @Override
     public List<SchoolClass> getAllClasses() {
-        return List.of();
+        return schoolClasses;
+    }
+
+    @Override
+    public SchoolClass getClassById(int id) {
+        return null;
     }
 
     @Override
