@@ -6,12 +6,12 @@ public class Student {
     private final int id;
     private final String name;
     private final String surname;
-    private final String grade;
+    private final int grade;
     private final int age;
     private final String gender;
     private final List<Lesson> lessons;
 
-    public Student(int id, String name, String surname, String grade, int age, String gender, List<Lesson> lessons) {
+    public Student(int id, String name, String surname, int grade, int age, String gender, List<Lesson> lessons) {
         this.id = id;
         this.name = name;
         this.surname = surname;
@@ -33,7 +33,7 @@ public class Student {
         return surname;
     }
 
-    public String getGrade() {
+    public int getGrade() {
         return grade;
     }
 

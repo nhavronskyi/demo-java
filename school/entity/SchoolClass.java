@@ -6,11 +6,13 @@ public class SchoolClass {
     private final int id;
     private final Teacher teacher;
     private final List<Student> students;
+    private int grade;
 
-    public SchoolClass(int id, Teacher teacher, List<Student> students) {
+    public SchoolClass(int id, Teacher teacher, List<Student> students, int grade) {
         this.id = id;
         this.teacher = teacher;
         this.students = students;
+        this.grade = grade;
     }
 
     public int getId() {
@@ -19,6 +21,14 @@ public class SchoolClass {
 
     public Teacher getTeacher() {
         return teacher;
+    }
+
+    public int getGrade() {
+        return grade;
+    }
+
+    public void upGrade() {
+        grade++;
     }
 
     public List<Student> getStudents() {

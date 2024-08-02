@@ -7,6 +7,13 @@ import school.service.SchoolService;
 import java.util.List;
 
 public class SchoolServiceImpl implements SchoolService {
+
+    private final List<SchoolClass> schoolClasses;
+
+    public SchoolServiceImpl(List<SchoolClass> schoolClasses) {
+        this.schoolClasses = schoolClasses;
+    }
+
     @Override
     public List<SchoolClass> getAllClasses() {
         return List.of();
