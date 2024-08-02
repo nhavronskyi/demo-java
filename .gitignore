@@ -41,4 +41,6 @@ build/
 
 .zed/
 
+out/
+
 __pycache__/
